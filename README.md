@@ -16,6 +16,19 @@ TC39 is the community that decides what to add or not in JavaScript. They gather
 
 After that, ECMAScript introduced their first standard specifications in 1997 called ES1. After that, it continued to deliver new standards in the same way, and we got ES5 in 2009 (it came with a lot of new features). From here, JavaScript started being used a lot more. Then after that, a new version was released in 2015, which was a groundbreaking update, popular with the name ES6, which changed JavaScript completely, and the biggest update came, and after that, JavaScript became popular as a modern programming language. It comes with the biggest update in history.
 
-And 2025 ma jb ES6 introduce kya to uske bad se isko log ES6 ki bajaye ES2015, ES2016, ES2017 ke name se pukarte ha becuae of it annual releases.
+And 2015 ma jb ES6 introduce kya to uske bad se isko log ES6 ki bajaye
+ES6: ES2015,
+ES7: ES2016,
+ES8: ES2017,
+jaise name se pukarte ha becuae of it annual releases. 
 
 There are 4 stages through which any feature is added to JavaScript.
+Where they make sure ke ye new future kuch problems create na kre etc
+
+### Importent: JavaScript is Backward Compatible
+Which means jo feature JavaScript ma aj se 20 saal pehle aya tha wo feature aj bhi javascript ma kam krega.
+
+### Importent: But JavaScript is not Forward Compatible
+Which means agr aj koi new feature intriduce hus Javascript ke andr or koi person use kr rha ha let say 15 saal purana browser means usne apna browser update nhi kia to wo newly introduced feature uske pas kam nhi krege. (and yes there are peoples who don't update there browsers for long)
+
+So for this problem we have modern tools like babel so waht they can do it they transpile our newly written modern JavaScript code into  prev versions like ES5 so that the old browsers can also support it.
