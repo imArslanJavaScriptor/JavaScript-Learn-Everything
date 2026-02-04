@@ -1,7 +1,52 @@
 // How to clone Arrays
-
 // How to concatenate Arrays
 
-let arr1 = ["Item1", "Item2"]
-let arr2 = arr1.slice(0) // Yaha ye slicce method arr1 ke leemnes ko slice kr rha ha 0 index se and 1 new array return ke rha ha jpke arr2 ma store ho rha ha.
-console.log(arr1 === arr2)
+let arr1 = ["Item1", "Item2"];
+let arr2 = arr1;
+
+if (arr1 === arr2) {
+  console.log("arr1 and arr2 are Same");
+} else {
+  console.log("arr1 and arr2 are Diffrent");
+}
+// Both are same arrays becuase the pointer is targeting to the same id in the heap memory
+
+// Now what if we want to clone to the same array but it will be stored seprately in the memory
+
+// Now we have diffrent arrays in the memory but this is not a practicaly good way
+// let array1 = [1,2,3,4]
+// let array2 = [1,2,3,4]
+
+// clone array using slice method so in this way we get seprate arrays in heep
+// let array1 = [1,2,3,4]
+// let array2 = array1.slice(0) (slice method fast ha comparietively baqi methods se)
+
+// Ab ma concat method use kr rha hu
+// let array1 = [1,2,3,4]
+// let array2 = [].concat(array1)
+
+// Ab ma use kr rha hu Spread Operaotr ka (Recommended)
+// let array1 = [1,2,3,4]
+// let array2 = [...array1]
+
+// Adding More Items into array
+let array1 = [1, 2, 3, 4];
+// Using Spread Operator
+let array2 = [...array1, 5, 6, 7, 8];
+// Using Concat Method
+let array3 = [].concat(array1, [5, 6, 7, 8])
+
+// Now im changin in array1 but this time ye array2 me reflect nhi hoga.
+array1.push(5);
+
+if (array1 === array2) {
+  console.log("array1 and array2 are Same");
+} else {
+  console.log("array1 and array2 are Diffrent");
+}
+console.log(array1);
+console.log(array2);
+
+// This way we get a brand new array containing the values of arr1 & arr2
+let newArray  = [...arr1, ...arr2]
+console.log("Brand New Array:", newArray)
