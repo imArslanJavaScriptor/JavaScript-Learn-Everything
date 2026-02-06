@@ -40,7 +40,40 @@ function isEven(num) {
     : `${num} is an Odd Number`;
 }
 
-console.log(isEven(11))
-console.log(isEven(12))
+console.log(isEven(11));
+console.log(isEven(12));
 
-// Duration: 5 Hours 8 Minutes
+let target = 4;
+let arr = [2, 4, 6, 8, 10];
+
+// Self Made Function By Arslan im Proud of my Self
+function findTarget(array, target) {
+  let capturedTarget
+  for (let elem in array) {
+    if (arr[elem] === target) {
+      capturedTarget = elem
+    }
+  }
+  if(capturedTarget !== undefined) {
+    return console.log(`Target is found and available at ${capturedTarget} index`);
+  } 
+  console.log("Target Not found")
+}
+
+
+findTarget(arr, target)
+
+
+
+// Very Importent Technical Term: niche abhi jis trha function bna ha function keyword ka use kr ke
+// is type ka functions ko kehte ha function declaration
+function findIndexTarget(array, target) {
+  for(let i=0; i < array.length; i++) {
+    if(array[i] === target) {
+      return `Target found at index ${i}`
+    }
+  }
+  return "Target Not Found"
+}
+
+console.log(findIndexTarget(arr, 6))
