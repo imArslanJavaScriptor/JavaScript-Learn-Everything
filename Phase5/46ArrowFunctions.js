@@ -8,4 +8,11 @@ const SumTwoNumbers = (num1, num2) => {
     return `The Sum of ${num1} + ${num2} is ${sum}`
 }
 
+// Agr Function sirf hi Parameter le rha ha to usko aesa bhi likh skte ha withouth () Parenthesis ke.
+const isOdd = number => {
+    return number % 2 !== 0 ? "Odd" : "Even"
+}
+
+
+// This kind of Function also known as 1 Liner
 const isEven = (num) => num %2 === 0 ? "Even" : "Odd"
