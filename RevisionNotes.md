@@ -3,7 +3,13 @@
 ## Notes From JavaScript Mastery Part 1
 
 ### Topic: Primtive or Refrence Data Types Kaise or Konsi Memory ma Save Hota ha or kyun diffrently behave kr tain hain. 
-Duration: From 3 Hours 7 Minutes To 3 Hours 17 Minutes
+Duration: From 3 Hours 7 Minutes To 3 Hours 17
+
+
+## Notes From JavaScript Mastery Part 2
+
+### Topic: How JavaScript Works. 
+Duration: From 2 Minutes 40 Seconeds To  2 Hours 46 Minutes 56 Seconds.
 
 ### How to Actually become an Engineer
  4 Points To Develop an Engineer Mindset
