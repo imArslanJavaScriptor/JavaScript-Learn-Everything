@@ -3,6 +3,7 @@ console.log(window)
 console.log(myFunction)
 console.log(fullName)
 
+// Function Declaration
 function myFunction() {
     console.log("This is My Function")
 }
@@ -10,4 +11,4 @@ function myFunction() {
 var firstName = "Imran"
 var lastName = "Khan" 
 var fullName = firstName + " " + lastName
-console.log(fullName)
+console.log(fullName) 

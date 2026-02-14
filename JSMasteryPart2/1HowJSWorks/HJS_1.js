@@ -8,5 +8,8 @@
 // Waht is Local Execution Context?
 // Closures
 
-console.log(userName)
-var userName = "Alice Jhon" 
+console.log(this)
+console.log(window)
+console.log(firstName)
+var firstName = "Jhon Wick" 
+console.log(firstName)
