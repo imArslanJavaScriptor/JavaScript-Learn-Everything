@@ -10,8 +10,5 @@ function getFullName(firstName, lastName) {
 
 }
 
-const personName = getFullName("Waeem", "Akram")
+const personName = getFullName("Waeem", "Badami")
 console.log(personName)
-
-// Start Lecture Again From: 1 Hour 14 Minutes
-// JavaScript Mastery Part 2
