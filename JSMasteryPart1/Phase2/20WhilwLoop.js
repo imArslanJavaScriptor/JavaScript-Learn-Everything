@@ -28,8 +28,9 @@ i++;
 // DRY Pincipple - Don't Repeat Yourself
 
 // print 0 to 9 using while loop
-let num = 0
+let num = 0;
 while (num < 10) {
-    console.log("Number is: " + num);
+    console.log("Number is: ", num);
     num++;
 }
+console.log(num) // Output: 10

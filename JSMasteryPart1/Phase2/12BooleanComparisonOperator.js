@@ -1,7 +1,7 @@
 // Waht is expression?
 // Expression is a piece of code that produces a value
-let expression = 3 + 4; // 3 + 4 is an expression that produces value 7
-console.log( expression ); // Output: 7
+let expression = 8 + 2; // 8 + 2 is an expression that produces value 7
+console.log( expression ); // Output: 10
 
 // booleans & comparison operators
 // Boolean can have only two values true or false
@@ -14,7 +14,7 @@ console.log( num1 > num2 ); // Output: true
 
 // == vs ===
 let val1 = 100
-letval2 = "100"
+let val2 = "100"
 console.log( val1 == val2 ); // Output: true (loose equality operator)
 console.log( val1 === val2 ); // Output: false (strict equality operator)
 

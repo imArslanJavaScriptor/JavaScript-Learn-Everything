@@ -10,4 +10,4 @@
 
 console.log( Boolean(NaN) ); // Output: false
 
-//Uper wali fasly values ke ilawa Baqi sab values truthy hotay hain
+// Uper wali fasly values ke ilawa Baqi sab values truthy hotay hain.

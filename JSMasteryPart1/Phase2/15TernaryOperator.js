@@ -8,3 +8,8 @@ console.log( canVote ); // Output: Yes, you can vote.
 let number = 7;
 let type = (number % 2 === 0) ? "Even" : "Odd";
 console.log( number + " is an " + type + " number." ); // Output: 7 is an Odd number.
+
+// Revision
+console.log("====== Revision ======");
+let dataAvailability = true
+dataAvailability === true ? console.log("Data Fetching....") : console.log("Data not found")

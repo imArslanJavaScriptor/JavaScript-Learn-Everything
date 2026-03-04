@@ -34,3 +34,31 @@ console.log( smallBigInt ); // Output: 450n
 // Also you cannot mix BigInt with regular number types
 // let invalidBigIntOperation = myNumber + 5; // This will throw an error
 // console.log( invalidBigIntOperation );
+
+
+// Revision
+console.log("=========== Revision ===========")
+let myName
+console.log(typeof myName) // Output: undefined
+
+myName = "imArslan"; 
+console.log(typeof userName); // Output: string
+console.log( typeof undefined ); // undefined
+
+console.log( typeof null ); // object Language Glitch it simply means "No Value"
+
+let availableStocks = null
+console.log(availableStocks); // Output: null
+
+// BigInt
+let bigNumber = BigInt("1234567890123456789012345678901234567890");
+let bigInteger = BigInt("450");
+console.log("Adding 2 BigInts: ", bigNumber + bigInteger)
+
+let bigIntegerWithoutBigIntConstructor = 1234567890123456789012345678901234567890n;
+// Output: bigint, 1234567890123456789012345678901234567890n;
+console.log(typeof bigIntegerWithoutBigIntConstructor) 
+
+// Also you cannot mix BigInt with regular number types
+let mixBigIntWithRegularNumber = 240n + 20
+// console.log(mixBigIntWithRegularNumber) // Cannot mix BigInt and other types, use explicit conversions

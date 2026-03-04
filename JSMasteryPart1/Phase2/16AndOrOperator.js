@@ -1,4 +1,4 @@
-// and or operator
+// and && or || operator
 
 // && (and) operator
 // && operator ka case me sari conditions true honi chahiye taake overall expression true ho
@@ -22,4 +22,13 @@ console.log( (a === 5) || (b === 10) ); // Output: false
 console.log( (c > a) || (b > c) || (a === 10) ); // Output: true
 
 
-// Chahe if-esle ho ternory operaotr ho etc concept same rhe ga && || Operators ka.
+// Chahe if-else ho ternory operator ho etc concept same rhe ga && || Operators ka.
+// Revision
+console.log("====== Revision ======");
+let dataLoaded = true
+let clientRendered = true
+if(dataLoaded && clientRendered) {
+  console.log("Data Loaded Successfully and Client Rendered Successfully.")
+}
+
+dataLoaded || clientRendered ? console.log("Start File Execution") : console.log("Process Execution Failed")
