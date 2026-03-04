@@ -1,5 +1,5 @@
 // Arrow Functions
-const sayHappeyBirthday = () => {
+const sayHappyBirthday = () => {
     console.log("Say Happy Birthday")
 }
 
@@ -14,5 +14,6 @@ const isOdd = number => {
 }
 
 
-// This kind of Function also known as 1 Liner
+// This kind of Function also known as 1 Liner function
 const isEven = (num) => num %2 === 0 ? "Even" : "Odd"
+console.log(isEven())

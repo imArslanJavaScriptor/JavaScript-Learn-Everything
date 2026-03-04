@@ -4,8 +4,7 @@
 // var is function scope
 
 
-// Ye {} Curly Brackets ka use kr ke hum block create krta ha or hum or agr kikis block ma let ya const ka use kia ha kuch bhi create 
-// krne ka liye variable, function, object etc to usko ap outside the {} use nhi kr skte  
+// Ye {} Curly Brackets ka use kr ke hum block create krta ha or hum kisi block ma let ya const ka use krta ha kuch bhi create krne ka liye variable, function, object etc to usko ap outside the {} use nhi kr skte.  
 
 
 // Example:
@@ -14,9 +13,9 @@
 // let firstName  = "HM"
 // }
 // console.log(firstName) // Output: ReferenceError: firstName is not defined
-// Reason: In this example Block ke an firstName ka variable available tha but hum usko 
+// Reason: In this example Block ke andr firstName ka variable available tha but hum usko 
 // get krne ki try kr rhe ha outside the Block is liye BCZ let and const are Block scoped and wo apny 
-// block sa bahir available nhi hot to is case ma hume ye err: ReferenceError: firstName is not defined mila
+// block sa bahir available nhi hot to is case ma hume ye err: ReferenceError: firstName is not defined mil rha ha.
 
 
 
@@ -78,13 +77,7 @@
 // console.log(name2); // Output: Smith (Ab error nahi aayega!)
 
 
-
-// *Kya main aapko "Function Scope" aur "Block Scope" ka real-world difference ek function bana kar dikhaon?*
-
-
-
-
-// This is Allowed Becuase The Both Varialbes are in their completely diffrent Scopes
+// This is Allowed BCZ Both Varialbes are in their completely diffrent Scopes
 // {
 //     let myName = "Arslan"
 //     console.log(myName)
@@ -103,12 +96,12 @@
 // Run and TRY to understand it.
 // {
 //     var city = "Lahore"
-//     // console.log(city)
+//     console.log(city)
 // }
 
 
 // {
-//     // var city = "Karachi"
+//     var city = "Karachi"
 //     console.log(city)
 // }
 // console.log(city)

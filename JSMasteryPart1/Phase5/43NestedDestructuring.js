@@ -5,7 +5,7 @@ const users = [
     {userId: 3, userName:"Jason", gender: "male"}
 ]
 
-// Normal
+// Regular Way
 const  [user1, , user3] = users
 console.log(user1)
 console.log(user3)

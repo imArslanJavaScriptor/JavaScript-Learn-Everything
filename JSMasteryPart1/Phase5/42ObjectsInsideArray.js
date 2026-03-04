@@ -1,5 +1,5 @@
 // Objects inside array
-// Vert usedfull in real world application
+// Very usefull in real world applications.
 const users = [
     {userId: 1, userName:"Jhon", gender: "male"},
     {userId: 2, userName:"Wrick", gender: "male"},

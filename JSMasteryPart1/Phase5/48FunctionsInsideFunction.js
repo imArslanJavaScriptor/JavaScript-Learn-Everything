@@ -1,4 +1,4 @@
-// Functions inside function
+// Functions Inside Function
 // hum 1 function ke andr multiple functions ko create and use kr skte hain.
 const app = () => {
   myFunc();

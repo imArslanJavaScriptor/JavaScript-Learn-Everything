@@ -8,17 +8,17 @@ sayHappyBirthday();
 sayHappyBirthday();
 sayHappyBirthday();
 sayHappyBirthday();
-sayHappyBirthday();
 
-// Ye jo person mane add kia ha (person) parenthesis ma isko kehte paramter
-// Tevhn ical Term: birthdayWishFunction function 1 paramter ha person
+// Ye jo person mane add kia ha (person) parenthesis ma isko kehte ha paramter
+// Technical Term: birthdayWishFunction function ma 1 paramter le rha ha person
 function birthdayWishFunction(person) {
   return `Happy Birthday to you Dear ${person}`;
 }
 
-// ab function kmo call krte waqt jo paramter ki value pass krte ha usko kehte ha argument yaha argument ha "Arslan"
-// Asan alfaz ma: jb function create krte wwaqt jo value pass krte ha use kehte he Parameter
-// or jub function call krte waqt koi value pass krte ha use kete ha Argument
+// ab function ko call krte waqt jo paramter ki value pass krte ha usko kehte ha argument
+// yaha argument ha "Arslan"
+// Asan alfaz ma: jb function create krte waqt jo value pass krte ha use kehte he Parameter
+// or jab function call krte waqt koi value pass krte ha use kete ha Argument
 let wishBirthdayToArslan = birthdayWishFunction("Arslan");
 console.log(wishBirthdayToArslan);
 
