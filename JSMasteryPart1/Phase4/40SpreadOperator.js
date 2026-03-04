@@ -1,17 +1,16 @@
 // Spread Operator
 // This will happen because Strings are also iterable like Arrays
-const newArray = [..."Apple"]; // this will spread this string into this way ["A", "p", "p", "l", "e"]
-console.log(newArray);
+const newArray = [..."King"] // this will spread this string into this way ["A", "p", "p", "l", "e"]
+// console.log(newArray);
 
-// Note: kisi bhi object ma  same key 2 bar nhi aski sirf 1 hi bar add hoti ha same key agr ap dublicate key add kroga
-// to hasmehsa last wali key ko prefer krega Keep in mind or last wali pehle wali ko over write krde gi.
+// Note: kisi bhi object ma same key 2 bar nhi aski sirf 1 hi bar add hoti ha same key agr ap dublicate key add kroga to hasmehsa last wali key ko prefer krega Keep in mind or last wali pehle wali ko over write krde gi.
 const obj = {
-  key1: "value1",
-  key2: "value2",
-  key3: "value3",
-  key1: "value70",
+  key1: "Val 1",
+  key2: "Val 2",
+  key3: "Val 3",
+  key1: "Val 10000", // This will owerwrite Val 1 with Val 10000
 };
-console.log(obj);
+// console.log(obj);
 
 // Spread Operator in Objects
 const obj1 = {
@@ -31,14 +30,22 @@ const newObj = {
   key5: "Value5",
   key6: "Value6",
 };
-console.log(newObj);
+// console.log(newObj);
 
 // Testing
-const testObj = { ...obj1 };
-console.log(testObj === obj1); // Output: fasle because it creates new object in the heap memory not sahring the same address
+const clonedObj1 = {...obj1}
+const testIdenticalObject = clonedObj1 === obj1
+console.log("Result:", testIdenticalObject) // Output: fasle BCZ it creates new object in the heap memory not sharing the same address
 
-// The Way we have spreadiong Strings in Arrays we can do the same in the Objects as well
-const createNewObjWithString = { ..."Apple" }; // Expected Output: { '0': 'A', '1': 'p', '2': 'p', '3': 'l', '4': 'e' }
-const createNewObjWithArray = { ...["Item1", "Item2", "Item3"] }; // Expected Output: { '0': 'Item1', '1': 'Item2', '2': 'Item3' }
+// The Way we have spreading Strings in Arrays we can do the same in the Objects as well
+const objStr = {..."Hundred"}
+console.log(objStr) 
+
+const createNewObjWithString = { ..."Apple" }; 
+// Expected Output: { '0': 'A', '1': 'p', '2': 'p', '3': 'l', '4': 'e' }
+
+const createNewObjWithArray = { ...["Item1", "Item2", "Item3"] };
+ // Expected Output: { '0': 'Item1', '1': 'Item2', '2': 'Item3' }
+ 
 console.log(createNewObjWithString);
 console.log(createNewObjWithArray);

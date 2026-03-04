@@ -6,14 +6,15 @@ const person = {
     "my hobbies": ["Read", "Eat", "Code", "Sleep"]
 }
 
-// Jb Bahir se kisi variable ko as amn key add krna ha tb bhi hum Bracket Notation ka use krta ha
-// Because Dot Notation ka use krne se jo name hum pass kreta ha wo usi name ko as an key pass kr deta ha
+// 1- Jb Bahir se kisi variable ko as a key add krna ho tb bhi hum Bracket Notation ka use krta ha
+// 2- BCZ Dot Notation ka use krne se jo name hum pass krta ha wo usi name ko as a key pass kr deta ha.
 
-// ab ye persona object ma "credentialType" ko as an key pas krdega
+// ab ye person object ma "credentialType" ko as an key pas krdega
 person.credentialType = "imArslan7061@gmail.com" // OutPut:  credentialType: 'imArslan7061@gmail.com'
 
 // Correct way to set the exact value "credentialType" as a Key 
-// Make Sure: person[credentialType] as it is pass kro strings ma nhi becuase yaha pr value 
-// compute hogi then as an key set hogi object ma 
+// Make Sure: person[credentialType] as it is pass kro strings ma nhi BCZ yaha pr value 
+// compute hogi then as a key set hogi object ma 
+
 person[credentialType] = "imArslan7061@gmail.com" // OutPut:  email: 'imArslan7061@gmail.com'
 console.log(person)

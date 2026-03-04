@@ -7,12 +7,12 @@ const person = {
 
 // using for in loop
 for(let key in person) {
-    console.log(`${key} : ${person[key]}`)
+    console.log("Keys From Person Object: ", key)
 }
 
 // using Object.keys / Object.values
-// console.log("Iterating Over Object Keys:", Object.keys(person))
-// console.log("Iterating Over Object Values:", Object.values(person))
+console.log("Iterating Over Object Keys:", Object.keys(person))
+console.log("Iterating Over Object Values:", Object.values(person))
 
 // Using for of loop
 for(let key of Object.keys(person)) {

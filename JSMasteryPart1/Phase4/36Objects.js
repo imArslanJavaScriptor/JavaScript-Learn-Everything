@@ -1,11 +1,10 @@
 // Objects
 
-// Objects are also refrence type: It will also save in the memory like arrays all the refrence
-// type will save exavtly the same way in the memory
+// Objects are also refrence type: It will also save in the memory like arrays. All the refrence type will save exactly the same way in the memory
 
-// Arrays are good but not sufficient for real world data
-// objects store key value pairs
-// objects don't have index
+// 1- Arrays are good but not sufficient for real world data
+// 2- objects store key value pairs
+// 3- objects don't have index
 
 // how to create objects
 const person = {

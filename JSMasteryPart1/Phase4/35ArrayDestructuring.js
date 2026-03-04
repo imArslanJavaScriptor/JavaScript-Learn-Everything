@@ -13,12 +13,11 @@ console.log(val2)
 
 console.log("After using Array Destructing Method")
 // const [variable1, variable2, ...restValues] = myArray 
-// sgr humare array me bohot sari values ha or un values ko hum as an array get krna chate ha 
-// to hum ... spread oprator ka usekrke 1 valribal bna lega jaise ...restValues ka name se mane bnaya ha and 
-// is ma sari remaaing values as an array store ho jai gi.
+// agr hamare array me bohot sari values ha or un values ko hum as an array get krna chate ha 
+// to hum ... spread oprator ka use krke 1 variable bna lega jaise ...restValues ka name se mane bnaya ha and is ma sari remaining values as an array store ho jai gi.
 
-// Now agr mujhe Varible2 ma Value 3 stroe krni ha to ma
-// ek extra coma add krduga jiska mtlab 1 value/index ko skip krna ha
+// Now agr mujhe Varible2 ma Value 3 stroe krni ho to ma
+// ek extra comma add krduga jiska mtlab 1 value/index ko skip krna ha
 // Expected Output 
 // This is Value 1
 // This is Value 3
@@ -32,3 +31,13 @@ const [variable1, , variable2, ...restValues] = myArray
 console.log(variable1)
 console.log(variable2)
 console.log(restValues)
+
+
+// Revision
+console.log("====== Revision ======")
+const  users = ["Ali","Hasan", "Hussain", "Arslan", "Ahsan", "Hadi"]
+const [user1, user2, user3, ...restUsers] = users
+console.log(user1)
+console.log(user2)
+console.log(user3)
+console.log(restUsers) 
