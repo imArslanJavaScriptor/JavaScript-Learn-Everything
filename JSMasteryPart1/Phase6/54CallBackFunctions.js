@@ -11,7 +11,7 @@ function Add2Num(num1, num2) {
 
 
 // checkNumbers(Add2Num(10, 20)) // It gives undefined because Add2Num is called immediately
-checkNumbers( () => Add2Num(10, 20)); // Itr works becuase we are using arrow function to pass the function reference
+checkNumbers( () => Add2Num(10, 20)); // It works BCZ we are using arrow function to pass the function reference
 
 
 function myFunMain() {
