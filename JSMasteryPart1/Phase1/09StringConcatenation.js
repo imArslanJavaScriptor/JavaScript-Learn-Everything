@@ -9,3 +9,10 @@ console.log(concatenatedString); // Output: "5090"
 // Now using Tricky Convertion to convert strings to numbers
 let concatenatedStringAsNumbers = +string1 + +string2
 console.log(concatenatedStringAsNumbers); // Output: 140
+
+// Revision Practice
+let concatinatedString = string1.concat(string2)
+console.log("ConcatenatedString:", concatenatedString)
+
+let numberConvertedConcatination = Number(string1) + Number(string2)
+console.log(numberConvertedConcatination)

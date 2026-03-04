@@ -32,3 +32,23 @@ console.log( typeof strToNumTricky ); // number
 let str = "123";
 let strToNum = Number(str);
 console.log( typeof strToNum ); // number
+
+
+// Revision Practice
+let num = 100
+console.log(typeof num) // Output: number
+
+// convert number to string
+let numberToStringTricky = num + "" // Tricky way
+console.log(typeof numberToStringTricky, numberToStringTricky) 
+
+let numberToStringProper = String(age); // Proper way
+console.log( typeof numberToStringProper, numberToStringProper ); // string
+
+// convert string to number
+let stringToNumberTricky = +"123"; // Tricky way
+console.log( typeof stringToNumberTricky, stringToNumberTricky); // number
+
+
+let stringToNumberProper = Number("120"); // Proper way
+console.log( typeof stringToNumberProper, stringToNumberProper ); // number

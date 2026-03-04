@@ -21,9 +21,29 @@ myName = "imArslan";
 var myName = "Mir Hadi";
 console.log(myName);
 
-// agr hum variables ko withouth var bhi declare krne ki koshsih kre to wo ho ji ga but is ki waja se bohot issues create ho skte ha so is ko avoid krna chaoye or if we wan to restrucit ke without var vairable declare na hot hum struct mode kte use kr skte ha.
+// agr hum variables ko withouth var bhi declare krne ki koshsih kre to wo ho ji ga but is ki waja se bohot issues create ho skte ha so is ko avoid krna chahiye or if we want to restrict ke without var vairable declare na ho to hum strict mode use kr skte ha.
+
 // These variables are couse error in strict mode
 // firstName = "Bilal"
 // firstname = "Hadi"
 // console.log(firstName);
 // console.log(firstname);
+
+
+// Revision Practice
+
+// Declaring a variable
+var userName = "Arslan"
+
+// Changing Variable
+userName = "King"
+console.log(userName) // Output: King
+
+
+var newName =  "Bilal"
+// Redeclaration Not Allowed and not possible in let & const keywords
+var newName = "Ali"
+console.log(newName) // Output: Ali
+
+// anyName = "myName"
+// console.log(anyName) //  ReferenceError: anyName is not defined BCZ we are using strict mode

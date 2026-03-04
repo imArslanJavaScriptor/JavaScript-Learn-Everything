@@ -11,3 +11,11 @@ console.log(aboutMeWithTraditionalMethod); // Output: My name is Arslan and I am
 // Using Template Strings
 let aboutMeWithTemplateStrings = `My name is ${name} and I am ${age} years old.`;
 console.log(aboutMeWithTemplateStrings); // Output: My name is Arslan and I am 20 years old.
+
+// Revision Practice
+let userName = "Arslan King"
+let userAge = 22
+let oldSchool = "Hello My Name is " + userName + " and i'm " + userAge + " years old"
+let modernWay = `Hello My Name is ${userName} and i'm ${userAge} years old`
+console.log("Old:" , oldSchool)
+console.log("Modern:", modernWay)

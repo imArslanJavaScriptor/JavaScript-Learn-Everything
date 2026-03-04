@@ -34,3 +34,13 @@ let slicedCountry1 = country.slice(0, 4);
 let slicedCountry2 = country.slice(7);
 // console.log(slicedCountry1); // Output: "Unit"
 // console.log(slicedCountry2); // Output: "States"
+
+
+// Revision Practice
+let str = "     StringContent      "
+console.log(str.trim().length)
+console.log(str.length)
+let trimedStr = str.trim()
+let str2 = trimedStr.slice(2)
+console.log(str === str2)
+console.log(str2)

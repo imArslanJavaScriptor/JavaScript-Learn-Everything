@@ -11,3 +11,9 @@ console.log(firstName[-1]); // Output: undefined (JavaScript does not support ne
 console.log(firstName.length); // Output: 6
 // Last index: length - 1
 console.log(firstName[firstName.length - 1]); // Output: n
+
+// Revision Practice
+let newStr = "This is a new String"
+strLength = newStr.length
+strFirstIndex = newStr[0]
+strFirstIndex = newStr[-1] // Negaive Indexing is not supported.
