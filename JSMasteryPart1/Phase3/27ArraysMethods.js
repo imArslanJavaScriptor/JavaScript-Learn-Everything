@@ -20,4 +20,4 @@ console.log(removedItemFromArrayEnd)
 // Who is faster
 // push and pop are reletively fast methods as compared to shift, unshift
 // Fast: Becuase push or pop array ke last ma items ko add ya remove kr rhe ha
-// Slow: But shift, unshift ko array ke sare itmes ko memory ma age shift krega then koi new item add ya remove krega. 
+// Slow: shift, unshift ko array ke sare itmes ko memory ma age shift krna prta ha then koi new item add ya remove krega. 

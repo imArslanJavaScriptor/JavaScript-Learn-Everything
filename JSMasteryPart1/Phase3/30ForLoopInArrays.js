@@ -5,6 +5,7 @@ let FRUITS = []
 for (let i = 0; i < fruits.length; i++) {
     FRUITS.push(fruits[i].toUpperCase())
 }
+// Now This FRUITS array filled with Upper Case Fruit Items
 console.log(FRUITS)
 // Get Last Property of an Array
 console.log("Last Value in fruit array:", fruits[fruits.length - 1])
