@@ -1,7 +1,7 @@
 // while loop
 
 // Print 0 to 9 wihile loop
-let i=0
+const i=0
 console.log(i)
 i++;
 console.log(i)

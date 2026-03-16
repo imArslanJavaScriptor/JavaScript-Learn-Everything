@@ -1,4 +1,4 @@
-// swith statement
+// switch statement
 let day = 0;
 switch (day) {
   case 0:
@@ -46,4 +46,4 @@ if (day === 0) {
   console.log("Invalid day!");
 }
 
-// Suggestion: Use switch when you have multiple discrete (constant) values to check against a single variable.    
+// Suggestion: Use switch when you have multiple discrete (constant) values to check against a single variable.
