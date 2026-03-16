@@ -34,10 +34,13 @@ let array1 = [1, 2, 3, 4];
 // Using Spread Operator
 let array2 = [...array1, 5, 6, 7, 8];
 // Using Concat Method
-let array3 = [].concat(array1, [5, 6, 7, 8])
+let array3 = [].concat(array1, [5, 6, 7, 8], [9, 10, 11, 12]);
+console.log("Array 3:", array3);
 
-// Now im changin in array1 but this time ye array2 me reflect nhi hoga.
+// Now im changing in array1 but this time ye array2 me reflect nhi hoga.
 array1.push(5);
+console.log("5 is Added in Array 1:", array1)
+console.log("But not in Array 2:", array2)
 
 if (array1 === array2) {
   console.log("array1 and array2 are Same");
@@ -48,5 +51,12 @@ console.log(array1);
 console.log(array2);
 
 // This way we get a brand new array containing the values of arr1 & arr2
-let newArray  = [...arr1, ...arr2]
-console.log("Brand New Array:", newArray)
+let newArray = [...arr1, ...arr2];
+console.log("Brand New Array:", newArray);
+
+
+let animals = ["Cat", "Lion", "Zebra"]
+// let animals2 = [...animals]
+// let animals2 = [].concat(animals)
+let animals2 = animals.slice(0)
+console.log(animals2 != animals ? "Animals2 is Diffrent Array" : "Animals2 is Same Array" )
