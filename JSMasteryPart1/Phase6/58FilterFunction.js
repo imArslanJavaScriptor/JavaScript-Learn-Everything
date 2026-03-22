@@ -1,4 +1,4 @@
-// // filter method
+// filter method
 const numbersArray = [3, 6, 7, 1, 2, 8, 9, 10, 4, 6];
 
 const isEven = (number) => {

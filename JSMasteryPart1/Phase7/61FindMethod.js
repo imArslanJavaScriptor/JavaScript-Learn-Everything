@@ -6,7 +6,7 @@ function isLength3(string) {
 }
 
 let res = myArray.find(isLength3)
-// find method myArray pr loop krega or check krega ke konse element ki length 3 ke equal ha jaise hi usko koi element milega jis ki length 3 ha 
+// find method myArray pr loop krega or check krega ke konse element ki length 3 ke equal ha jaise hi usko koi element milega jis ki length 3 ha
 // to wo waha sa return kr jai ga and importent thing is ye sirf 1 occurance ko return krega jo pehle milgya baqi as it is rhe gi
 // or agr koi element condiotion meet nhi krega to undefined return ho jai ga.
 console.log(res) // OutPut: Cat

@@ -1,4 +1,5 @@
 // Reduce Method
+const numsArr = [2,4,6,8,3]
 const numbersArray = [3, 6, 7, 1, 2, 8, 9, 10, 4, 6];
 let sum = numbersArray.reduce((accumulator, currentValue) => {
     return accumulator + currentValue
@@ -18,7 +19,7 @@ console.log(sum) // Output: 56
 
 
 
-// filter method total values ko reduce krke 1 value return kr rha ha current above example 
+// reduce() method total values ko reduce krke 1 value return kr rha ha current above example 
 // ma 56 return kr rha ha which is the sum of all the numbersArray 
 
 const UserCart = [
