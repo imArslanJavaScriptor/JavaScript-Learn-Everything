@@ -1,7 +1,7 @@
 // Spread Operator
 // This will happen because Strings are also iterable like Arrays
 const newArray = [..."King"] // this will spread this string into this way ["A", "p", "p", "l", "e"]
-// console.log(newArray);
+console.log(newArray);
 
 // Note: kisi bhi object ma same key 2 bar nhi aski sirf 1 hi bar add hoti ha same key agr ap dublicate key add kroga to hasmehsa last wali key ko prefer krega Keep in mind or last wali pehle wali ko over write krde gi.
 const obj = {
@@ -10,7 +10,7 @@ const obj = {
   key3: "Val 3",
   key1: "Val 10000", // This will owerwrite Val 1 with Val 10000
 };
-// console.log(obj);
+console.log(obj);
 
 // Spread Operator in Objects
 const obj1 = {
@@ -39,7 +39,7 @@ console.log("Result:", testIdenticalObject) // Output: fasle BCZ it creates new 
 
 // The Way we have spreading Strings in Arrays we can do the same in the Objects as well
 const objStr = {..."Hundred"}
-console.log(objStr) 
+console.log(objStr)
 
 const createNewObjWithString = { ..."Apple" }; 
 // Expected Output: { '0': 'A', '1': 'p', '2': 'p', '3': 'l', '4': 'e' }

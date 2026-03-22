@@ -64,7 +64,6 @@ function findTarget(array, target) {
 findTarget(arr, target)
 
 
-
 // Very Importent Technical Term: niche abhi jis trha function bna ha function keyword ka use kr ke
 // is type ka functions ko kehte ha function declaration
 function findIndexTarget(array, target) {

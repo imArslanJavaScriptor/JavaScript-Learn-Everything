@@ -4,6 +4,7 @@ function printParameters(p1, p2, p3, p4, ...restParamters) {
   console.log(p2);
   console.log(p3);
   console.log(p4);
+  console.log(restParamters) // Array containing remaining parameters
   restParamters.map((parameter) =>
     console.log(`Member of Rest Parameter: ${parameter}`),
   );

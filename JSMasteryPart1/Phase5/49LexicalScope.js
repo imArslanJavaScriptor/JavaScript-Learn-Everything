@@ -28,9 +28,6 @@ myApp();
 // to is process ko kethe lexical scoping / Lexical Channing
 
 // Refined Version
-// Aapka concept bilkul sahi tha, bas usko thoda professional
-// terms ke saath refine kar lete hain taaki interview ya exams mein aapko aasani ho.
-
 // IMP: Lexical Scope & Scope Chain (Refined Notes)
 
 // 1. Lexical Scope (The Rule)
@@ -68,3 +65,7 @@ function outer() {
 const counter = outer();
 counter(); // 1
 counter(); // 2
+counter(); // 3
+counter(); // 4
+counter(); // 5
+counter(); // 6

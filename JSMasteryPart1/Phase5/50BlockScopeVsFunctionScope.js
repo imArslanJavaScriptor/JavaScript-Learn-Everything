@@ -110,21 +110,21 @@
 function myApp() {
     if(true) {
         var myName = "Arslan"
-        console.log(myName)
+        console.log(myName, "True Output")
     }
-    console.log(myName)
+    console.log(myName, "False Output")
 }
 // console.log(myName)
 
 myApp()
 
 
-for(var i = 0; i< 10; i++) {
+for(var i = 0; i < 10; i++) {
     console.log(i)
 }
 console.log("Accessing i outside the loop:", i) // Output: 10 Becuase it i is created with var keyword
 
-for(let i = 0; i< 10; i++) {
+for(let i = 0; i < 10; i++) {
     console.log(i)
 }
 console.log("Accessing i outside the loop:", i) // Output: ReferenceError: i is not defined Becasue let is not available outside of it's block
