@@ -1,4 +1,4 @@
-"use strict";
+// "use strict";
 // Intro to variables in JavaScript
 
 // variables can store some information 
@@ -7,17 +7,18 @@
 
 // declaring a variable
 var myName = "Arslan";
-// This var here is a keyword to declare a variable. And These Keywords are already defined in Programming Languages
-// Variables names are case sensitive
-
 
 // use the variable
 console.log(myName);
 
-// changing the variable
+// This var here is a keyword to declare a variable.
+// These Keywords are already defined in Programming Languages
+// Variables names are case sensitive
+
+// changing the variable value
 myName = "imArslan";
 
-// Altought it is is not recommnded and not even allowed in other keyewords like let, const but in var we can redeclare the variable
+// Altought it is not recommnded and not even allowed in other keyewords like let, const but in var we can redeclare the variable
 var myName = "Mir Hadi";
 console.log(myName);
 
@@ -25,25 +26,26 @@ console.log(myName);
 
 // These variables are couse error in strict mode
 // firstName = "Bilal"
-// firstname = "Hadi"
 // console.log(firstName);
-// console.log(firstname);
 
 
 // Revision Practice
 
 // Declaring a variable
 var userName = "Arslan"
+// Now at this point userName = "Arslan"
 
 // Changing Variable
 userName = "King"
-console.log(userName) // Output: King
+// Now userName Changes to King
 
 
-var newName =  "Bilal"
-// Redeclaration Not Allowed and not possible in let & const keywords
-var newName = "Ali"
-console.log(newName) // Output: Ali
+// Here im redeclaring the variable but it is not allowed and not doable  in the let & const case.
+var yourCity = "Lahore"
+var yourCity = "Karachi"
 
-// anyName = "myName"
-// console.log(anyName) //  ReferenceError: anyName is not defined BCZ we are using strict mode
+
+// randomName = "Ahsan"
+// if strict mode is not enabled then varaible randomName declared and usable
+// like normal variable but not recommended and create issues in any serious 
+// project so we use strict mode to avoid this behaviour. 

@@ -17,3 +17,7 @@ let newStr = "This is a new String"
 strLength = newStr.length
 strFirstIndex = newStr[0]
 strFirstIndex = newStr[-1] // Negaive Indexing is not supported.
+
+let myName = "Arslan King"
+console.log(myName)
+console.log(myName.length)

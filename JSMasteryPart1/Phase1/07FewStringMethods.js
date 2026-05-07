@@ -44,3 +44,7 @@ let trimedStr = str.trim()
 let str2 = trimedStr.slice(2)
 console.log(str === str2)
 console.log(str2)
+
+let strContent = "aralaos      jcjdsoicjsdcnjsd        0reindv"
+console.log(strContent)
+console.log(strContent.trim())

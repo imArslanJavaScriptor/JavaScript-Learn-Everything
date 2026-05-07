@@ -1,21 +1,24 @@
 // let keyword
 // declaring variables with let
 
-// let solve this problem of redeclaring variables
+
+// Remeber this redeclaration problem in var keyword
 var user1 = "New User"
 var user1 = "Another User"
 
-// We cannot redeclare variables in let case
+// let keyword solve this problem
+// We cannot redeclare variables that declare with let keyword
 let myAge = 25;
 // let myAge = 30; // This will cause an error: Identifier 'myAge' has already been declared
-myAge = 30; // We can reassign the value
+// We cannot redeclare the variable but sure we can reassing the value in the same variable
+// These are 2 diffrent things redeclaration is the rocess of defining the variable while reassinging is the process to change or update the value of the already declared varialbe.
+// Example:
+myAge = 30; // We can reassigning the value here.
 
-// console.log(myAge); // 25
 
 // block scope vs function scope (covered in great detail later)
 
-
 // Revision Practice
-let newUser = "New User"
+let newUser = "Asim Kamal"
 // let newUser = "New User" // Redeclaration is not allowed in let keyword
-newUser = "Reassigned User" // Reassigning is allowed here
+newUser = "Hamza Abbasi" // Reassigning is allowed here

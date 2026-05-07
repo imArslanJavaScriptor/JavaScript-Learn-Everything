@@ -52,3 +52,10 @@ console.log( typeof stringToNumberTricky, stringToNumberTricky); // number
 
 let stringToNumberProper = Number("120"); // Proper way
 console.log( typeof stringToNumberProper, stringToNumberProper ); // number
+
+
+strToNumTricky = +"120"
+console.log(strToNumTricky, typeof(strToNumTricky))
+
+let numToStrTricky = 120+ ""
+console.log(numToStrTricky, typeof(numToStrTricky))
