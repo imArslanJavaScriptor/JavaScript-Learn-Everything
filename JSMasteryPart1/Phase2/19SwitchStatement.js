@@ -47,3 +47,20 @@ if (day === 0) {
 }
 
 // Suggestion: Use switch when you have multiple discrete (constant) values to check against a single variable.
+
+let month = "July";
+
+switch (month) {
+  case "June":
+  case "July":
+  case "August":
+    console.log("It's Summer!");
+    break;
+  case "December":
+  case "January":
+  case "February":
+    console.log("It's Winter!");
+    break;
+  default:
+    console.log("It's a transition season.");
+}

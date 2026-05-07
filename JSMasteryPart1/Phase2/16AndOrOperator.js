@@ -1,7 +1,8 @@
-// and && or || operator
+// and && or || operators
 
 // && (and) operator
-// && operator ka case me sari conditions true honi chahiye taake overall expression true ho
+// && operator ka case me  sari conditions true honi chahiye 
+// in order to make the overall expression true.
 let a = 10;
 let b = 5;
 let c = 15;
@@ -21,14 +22,17 @@ console.log( (a === 5) || (b === 5) ); // Output: true
 console.log( (a === 5) || (b === 10) ); // Output: false
 console.log( (c > a) || (b > c) || (a === 10) ); // Output: true
 
-
-// Chahe if-else ho ternory operator ho etc concept same rhe ga && || Operators ka.
+// IMP: if-else ho ternory operator ho etc concept same rhe ga && || Operators ka.
 // Revision
 console.log("====== Revision ======");
-let dataLoaded = true
-let clientRendered = true
-if(dataLoaded && clientRendered) {
-  console.log("Data Loaded Successfully and Client Rendered Successfully.")
+let serverRunning = true
+let dataFetchedSuccessfully = true
+if(dataFetchedSuccessfully && serverRunning) {
+  console.log("Data Loaded & Rendered Successfully.")
 }
 
-dataLoaded || clientRendered ? console.log("Start File Execution") : console.log("Process Execution Failed")
+let userRole = "guest";
+let isOwner = true;
+
+// Logic: If EITHER condition is true, allow the action
+let canDeleteThePost = (userRole === "admin" || isOwner) ? "You can Delete Your Post" : "Not Allowed";

@@ -1,25 +1,25 @@
 // if else conditional statements in JavaScript
-let age = 20;
-if (age >= 18) {
-  console.log("User Can Play Asphalt 9 game.");
+let userActive = true
+if (userActive) {
+  console.log("Run When Condition Evaluated in True: Status", userActive);
 } else {
-  console.log("User can play other games.");
-}
-
-// Check for even and odd numbers
-let number = 7;
-if (number % 2 === 0) {
-  console.log(number + " is an even number.");
-} else {
-  console.log(number + " is an odd number.");
+  console.log("Run When Condition Evaluated in False: Status", userActive);
 }
 
 // Revision
 console.log("====== Revision ======");
-let dataCheck = true;
+let isEven = 20;
 
-if (dataCheck) {
-  console.log("Executing Data...");
+if (isEven) {
+  console.log("Even Number");
 } else {
-  console.log("Data is not Available");
+  console.log("Odd Number");
+}
+
+let userAge = 10
+
+if(userAge >= 18) {
+  console.log("User is Allowed To Vote")
+} else {
+  console.log("User is not allowed To Vote")
 }
