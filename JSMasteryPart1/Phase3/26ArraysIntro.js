@@ -16,7 +16,7 @@ console.log(checkIsArray)
 
 let str = "Arslan"
 str[0] = "imA" // Strings are immutable strings cannot be change
-console.log(str[0])
+console.log(str) // But is still returns Arslan which is orignial string value. 
 
 let numbers = [1,2,3,4,5]
 console.log(numbers)

@@ -7,3 +7,16 @@ do {
 } while (i < 10);
 // Do while loop 1 bar chalta hi chlate ha even if the condition is false
 console.log("Current values of i:", i)
+
+
+let userName = "HM-Arslan"
+let value = 0
+
+do{
+if(userName[value] === "l") {
+  break
+}
+console.log(userName[value])
+value++
+
+}while(value < userName.length)

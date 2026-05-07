@@ -1,62 +1,60 @@
-// How to clone Arrays
-// How to concatenate Arrays
+// How to clone & concatenate Arrays
 
-let arr1 = ["Item1", "Item2"];
-let arr2 = arr1;
-
-if (arr1 === arr2) {
-  console.log("arr1 and arr2 are Same");
-} else {
-  console.log("arr1 and arr2 are Diffrent");
+// Method to check same or seprate
+function checkIsSameOrSeprate(arrOne, arrTwo) {
+  let res = arrOne === arrTwo ? "Same Arrays" : "Seprate Arrays";
+  console.log(res);
 }
-// Both are same arrays becuase the pointer is targeting to the same id in the heap memory
 
-// Now what if we want to clone to the same array but it will be stored seprately in the memory
+let arrOneV1 = ["Item1", "Item2"];
+let arrTwoV1 = arrOneV1;
 
-// Now we have diffrent arrays in the memory but this is not a practicaly good way
-// let array1 = [1,2,3,4]
-// let array2 = [1,2,3,4]
+checkIsSameOrSeprate(arrOneV1, arrTwoV1);
+// Both are same arrays BCZ the pointer
+// is targeting to the same id in the heap memory
 
-// clone array using slice method so in this way we get seprate arrays in heep
-// let array1 = [1,2,3,4]
-// let array2 = array1.slice(0) (slice method fast ha comparietively baqi methods se)
+// Requirment: What if we want to clone to the same array but it will be stored seprately in the memory
 
-// Ab ma concat method use kr rha hu
-// let array1 = [1,2,3,4]
-// let array2 = [].concat(array1)
+// 1- Create completely seprate arrays but
+// this is not a practical bcz we are doing it
+// manually and wha if we have lot more values.
+let arrOneV2 = [1, 2, 3, 4, 5];
+let arrTwoV2 = [1, 2, 3, 4, 5];
+checkIsSameOrSeprate(arrTwoV1, arrTwoV2);
 
-// Ab ma use kr rha hu Spread Operaotr ka (Recommended)
-// let array1 = [1,2,3,4]
-// let array2 = [...array1]
+// 2- Clone array using slice method so
+// in this way we get seprate arrays in heep
+// IMP: (slice method fast ha comparietively baqi methods se)
+let arrOneV3 = ["Apple", "Mango", "Orange", "PineApple"];
+let arrTwoV3 = arrOneV3.slice(0);
+checkIsSameOrSeprate(arrOneV3, arrTwoV3);
+
+// 3- Clone array using concat method.
+let arrOneV4 = [1, 2, 3, 4];
+let arrTwoV4 = [].concat(arrOneV4);
+checkIsSameOrSeprate(arrOneV4, arrTwoV4);
+
+// 4- Clone array using Spread Operaotr (Recommended)
+let arrOneV5 = [1, 2, 3, 4];
+let arrTwoV5 = [...arrOneV5];
+checkIsSameOrSeprate(arrOneV5, arrTwoV5);
 
 // Adding More Items into array
 let array1 = [1, 2, 3, 4];
-// Using Spread Operator
+// 1- Using Spread Operator
 let array2 = [...array1, 5, 6, 7, 8];
-// Using Concat Method
+
+// 2- Using Concat Method
 let array3 = [].concat(array1, [5, 6, 7, 8], [9, 10, 11, 12]);
 console.log("Array 3:", array3);
 
 // Now im changing in array1 but this time ye array2 me reflect nhi hoga.
-array1.push(5);
-console.log("5 is Added in Array 1:", array1)
-console.log("But not in Array 2:", array2)
+array1.push(50);
+console.log("50 is Added in Array 1:", array1);
+console.log("But not in Array 2:", array2);
 
-if (array1 === array2) {
-  console.log("array1 and array2 are Same");
-} else {
-  console.log("array1 and array2 are Diffrent");
-}
-console.log(array1);
-console.log(array2);
-
+let fruitArr1 = ["Apple", "Mango"];
+let fruitArr2 = ["Banana", "Orange"];
 // This way we get a brand new array containing the values of arr1 & arr2
-let newArray = [...arr1, ...arr2];
-console.log("Brand New Array:", newArray);
-
-
-let animals = ["Cat", "Lion", "Zebra"]
-// let animals2 = [...animals]
-// let animals2 = [].concat(animals)
-let animals2 = animals.slice(0)
-console.log(animals2 != animals ? "Animals2 is Diffrent Array" : "Animals2 is Same Array" )
+let brandNewArray = [...fruitArr1, ...fruitArr2];
+console.log("Brand New Array:", brandNewArray);

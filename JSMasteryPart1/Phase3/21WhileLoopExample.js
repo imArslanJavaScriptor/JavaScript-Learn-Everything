@@ -18,16 +18,16 @@
 // Revision
 console.log("===== Revision =====");
 
-let num = 0;
-let total = 0;
+let num = 4;
+let count = 1;
+let total = ""; // Fix: Initialize with empty string
 
-while(num <= 10) {
-  total += num
-  num++
+while (count <= 10) {
+  total += `${num} X ${count} = ${num * count}\n`;
+  count++;
 }
 
-console.log("The total sum from 0 to 10 is: " + total);
-
+console.log(total);
 // By Applying Formula
 let number = 100;
 let totalSum = (number * (number + 1)) / 2;

@@ -27,3 +27,22 @@ for(let i=0; i < string.length; i++) {
     }
     console.log(string[i])
 }
+
+let count = 0
+let value = 20
+for(count; count <= value; count++) {
+    if(count === 18) {
+        continue
+    }
+    console.log(count)
+}
+
+let detect = "l"
+let name = "Arslan"
+
+for(let i=0; i < name.length; i++) {
+    if(name[i] === detect) {
+        break
+    }
+    console.log(name[i])
+}
