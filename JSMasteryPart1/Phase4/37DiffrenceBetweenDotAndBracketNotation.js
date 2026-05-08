@@ -18,3 +18,13 @@ person.credentialType = "imArslan7061@gmail.com" // OutPut:  credentialType: 'im
 
 person[credentialType] = "imArslan7061@gmail.com" // OutPut:  email: 'imArslan7061@gmail.com'
 console.log(person)
+
+const userInfo = "This is user info"
+const sampleInfoObject = {
+    name: "user name",
+    age: "user age",
+    userInfo // When key & value both are same then we write 1 time only.
+}
+
+// Adding Key/Value Pairs in Object
+console.log(sampleInfoObject)

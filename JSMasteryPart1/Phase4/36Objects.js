@@ -1,6 +1,7 @@
 // Objects
 
-// Objects are also refrence type: It will also save in the memory like arrays. All the refrence type will save exactly the same way in the memory
+// Objects are also refrence type: It will also save in the memory like arrays.
+// All the refrence type will save exactly the same way in the memory
 
 // 1- Arrays are good but not sufficient for real world data
 // 2- objects store key value pairs
@@ -33,3 +34,16 @@ console.log(person["my hobbies"])
 person.gender = "male"
 person["designation"] = "Senior Software Engineer"
 console.log(person)
+
+
+const sampleInfoObject = {
+    name: "user name",
+    age: "user age",
+}
+
+// Adding Key/Value Pairs in Object
+sampleInfoObject.email = "user email"
+sampleInfoObject["about user"] = "This is about user info"
+console.log(sampleInfoObject.age)
+console.log(sampleInfoObject["about user"])
+console.log(sampleInfoObject)

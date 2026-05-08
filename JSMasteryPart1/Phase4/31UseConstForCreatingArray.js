@@ -1,14 +1,13 @@
 // use const for creating array
 const pi = 3.14
 // pi = 12  // Assignment to Constant Error
-// console.log(pi)
 
 // So here we are able to push the new item in fruits array even the fruits array is created with const
 // Yes this is fine becuase ye array ka method ha jo ke existing array pr operation perform kr rha ha 
 // new array create nhi kr rha or reasgin nhi krrha wohi same Heap or pointer address wala concept ha
 // or recommended ha ka const ka use kr ke hi arrays ko create krain becuase let ke case ma issue ho skte hain like re-assigning issue.
 const fruits = ["Apple", "Mango", "Grapes", "Banana"];
-fruits.push("Strawberry")
+fruits.push("Strawberry" , "Kivi")
 // fruits = ["Apple", "Mango"]; // But ye const ke case ma kro ga to error a jai ga
 console.log(fruits)
 
