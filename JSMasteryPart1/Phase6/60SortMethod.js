@@ -98,8 +98,8 @@
 // BreakDown of numberArray in Sort Method
 let numbersArray = [5, 9, 1200, 400, 3000, 2000, 1000];
 // Predict The Output: 
-console.log(numbersArray.sort())
-// Output: first wo sb elemnts a jai ga jin ka ASCII code sb se ka ha like numbersArray ma 1 ka code sb se kam ha whoch is 48 
+console.log("Output:", numbersArray.sort())
+// Output: first wo sb elemnts a jai ga jin ka ASCII code sb se kam ha like numbersArray ma 1 ka code sb se kam ha which is 48 
 // so jitne bhi elements jo ka 1 sa start ho rhe ha wo pehle a jai ga  like 1000, 12000
 // then jitne bhi elements jo ka 2 sa start ho rhe ha wo a jai ga like 2000
 // then jitne bhi elements jo ka 3 sa start ho rhe ha wo a jai ga like 3000

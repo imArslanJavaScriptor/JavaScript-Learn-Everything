@@ -7,7 +7,7 @@ function myFunc() {
 const result = myFunc() // myFunc ne jo return kia wo mane result valirable ma store kr lya
 console.log(result) // Output: A
 
-// Isi trha ab function se fujnction return kr ke dekhte ha
+// Isi trha ab function se function return kr ke dekhte ha
 function myFunc2() {
     function greeting() {
         console.log("Good Morning Sir")

@@ -14,3 +14,16 @@ let filterOddNumbers = numbersArray.filter((num) => {
     return num % 2 !== 0
 })
 console.log(filterOddNumbers)
+
+let users = [
+    {id: 1, userName: "Arslan"},
+    {id: 2, userName: "Atif"},
+    {id: 3, userName: "Ali"},
+    {id: 4, userName: "Asim"},
+    {id: 5, userName: "Muneeb"},
+    {id: 6, userName: "Saim"},
+    {id: 7, userName: "Haidar"},
+]
+
+let filteredByFirstCharacter = users.filter((item) => item.userName.startsWith("A"))
+console.log(filteredByFirstCharacter)

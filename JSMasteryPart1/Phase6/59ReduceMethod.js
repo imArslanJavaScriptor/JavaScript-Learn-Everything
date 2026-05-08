@@ -1,10 +1,11 @@
 // Reduce Method
-const numsArr = [2,4,6,8,3]
+
 const numbersArray = [3, 6, 7, 1, 2, 8, 9, 10, 4, 6];
 let sum = numbersArray.reduce((accumulator, currentValue) => {
     return accumulator + currentValue
-})
+}, 1)
 console.log(sum) // Output: 56
+
 // How it works
 // accumulator, currentValue,   return
 // 3               6               9
@@ -16,7 +17,6 @@ console.log(sum) // Output: 56
 // 36              10              46
 // 46              4               50
 // 50              6               56
-
 
 
 // reduce() method total values ko reduce krke 1 value return kr rha ha current above example 

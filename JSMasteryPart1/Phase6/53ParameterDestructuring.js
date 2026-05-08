@@ -19,3 +19,16 @@ function printDetail({personName, designation}) {
 }
 
 printDetail(person)
+
+
+const userInfo = {
+    userName: "Hafiz Muhammad Arslan",
+    age: 20,
+    email: "arslan@imarslansaas.com"
+}
+
+function printUserInfo({userName, age, email}) {
+    console.log(`${userName} is ${age} year's old Software Engineer for Contact email:${email}`)
+}
+
+printUserInfo(userInfo)

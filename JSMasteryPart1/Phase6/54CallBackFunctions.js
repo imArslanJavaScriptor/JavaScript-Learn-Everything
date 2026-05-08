@@ -9,20 +9,21 @@ function Add2Num(num1, num2) {
   console.log(sum);
 }
 
-
 // checkNumbers(Add2Num(10, 20)) // It gives undefined because Add2Num is called immediately
 checkNumbers( () => Add2Num(10, 20)); // It works BCZ we are using arrow function to pass the function reference
+
+// Use this if you want to pass the callBack function with arguments direclty
+function acceptAndCallFunction(callBack) {
+  return (() => callBack)
+}
+acceptAndCallFunction(Add2Num(20, 90))
 
 
 function myFunMain() {
     console.log("Inside my func main")
 }
 
-function myFunc2(callBack) {
-    callBack()
-}
-myFunMain(myFunc2)
-
+myFunMain()
 
 // Notes
 // 🚀 JavaScript Callbacks: Reference vs Execution

@@ -8,7 +8,7 @@ function multiplyBy2(number, index, arr) {
 }
 
 // for (let i = 0; i < numbersArray.length; i++) {
-//   multiplyBy2(numbersArray[i], i);
+//   multiplyBy2(numbersArray[i], i, numbersArray);
 // }
 
 numbersArray.forEach(multiplyBy2);
@@ -16,7 +16,7 @@ numbersArray.forEach(multiplyBy2);
 // forEach ma hum callBack pass krte ha current case ma humne multiplyBy2
 // function pass kia or further multiplyBy2 wala function 3 arguments pass krne tha number, index, arr
 // joke forEach ke pass default hote ha is liye humne just multiplyBy2 pass kia as a refrence in the forEach callBack
-// or forEach na automatically value ko pass krdia or humne expected output mil gya.
+// or forEach na automatically value ko pass krdia or expected output mil gya.
 
 // By defining callBack inside forEach
 numbersArray.forEach((item, index, array) => {
@@ -30,7 +30,6 @@ numbersArray.forEach((item, index, array) => {
 numbersArray.forEach((item) => {
   console.log(`2 x ${item} = ${item * 2}`);
 });
-
 
 const users = [
     {userName: "Alice", age: 30},
