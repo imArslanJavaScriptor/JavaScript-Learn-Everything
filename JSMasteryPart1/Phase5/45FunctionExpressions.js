@@ -1,4 +1,5 @@
-// Function Declaration
+// Examples of Function Declaration
+
 function sayHappyBirthday() {
   console.log("Happy Birthday....")
 }

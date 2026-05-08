@@ -1,18 +1,12 @@
-// // Hoisting
+// Hoisting
 
-// hello()
+hello() // Accessable BCZ it is hoisted
+function hello() {console.log("Hello World")}
 
-// function hello() {
-//     console.log("Hello World")
-// }
-
-sayNew()
-
-function sayNew() {
-  console.log("Saying New")
-}
+sayNew() // Accessable BCZ it is hoisted
+function sayNew() {console.log("Saying New")}
 
 
-// console.log(greeting)
-// let greeting = "Hello World"
-// console.log(greeting)
+// console.log(greeting) // Cannot access 'greeting' before initialization
+let greeting = "Hello World"
+console.log(greeting)

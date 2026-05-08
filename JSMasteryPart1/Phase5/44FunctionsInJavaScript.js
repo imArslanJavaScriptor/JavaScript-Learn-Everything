@@ -17,7 +17,7 @@ function birthdayWishFunction(person) {
 
 // ab function ko call krte waqt jo paramter ki value pass krte ha usko kehte ha argument
 // yaha argument ha "Arslan"
-// Asan alfaz ma: jb function create krte waqt jo value pass krte ha use kehte he Parameter
+// Asan alfaz ma: function create krte waqt jo value pass krte ha use kehte he Parameter
 // or jab function call krte waqt koi value pass krte ha use kete ha Argument
 let wishBirthdayToArslan = birthdayWishFunction("Arslan");
 console.log(wishBirthdayToArslan);
@@ -50,7 +50,7 @@ let arr = [2, 4, 6, 8, 10];
 function findTarget(array, target) {
   let capturedTarget
   for (let elem in array) {
-    if (arr[elem] === target) {
+    if (array[elem] === target) {
       capturedTarget = elem
     }
   }
@@ -59,7 +59,6 @@ function findTarget(array, target) {
   } 
   console.log("Target Not found")
 }
-
 
 findTarget(arr, target)
 

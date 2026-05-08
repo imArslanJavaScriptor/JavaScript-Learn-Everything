@@ -16,19 +16,8 @@ function myApp() {
 }
 myApp();
 
-// My Written Version
-// Ab Yah pr samjho ho kia rha ha
-// hamare pass main function ha called myApp
-// then uske andr ha myFunc
-// then uska andr ha myFunc2
-// ab agr ma requiredVal jo ke bohot sari places pr moujood ha un ma sa
-// jo myFunc2 ka pas ha usko comment krdo to myFunc2 apne Lexical scope ma check krega or uska Lexical Scope ha jaha myFunc2 available ha
-// to myFunc2 available ha inside myFunc to ab myFunc2 requiredVal ki value uthaiga myFunc ma sa isi triqe sa agr ma isko bhi
-// remove / comment kr do jo myFunc ma ha to ab  uske Lexical scope ma dekhega meaning 1 step futher whih is myApp
-// to is process ko kethe lexical scoping / Lexical Channing
 
-// Refined Version
-// IMP: Lexical Scope & Scope Chain (Refined Notes)
+// IMP: Lexical Scope & Scope Chain
 
 // 1. Lexical Scope (The Rule)
 // Lexical scope ka matlab hai ki kisi bhi function ki "boundary" kahan tak hai, yeh tabhi decide ho jata hai jab aap code *likhte* (define karte) ho.
@@ -53,7 +42,6 @@ myApp();
 // Lexical scope ki wajah se hi *Closures* bante hain. Jab ek function apne outer scope ke variables ko "yaad" rakhta hai, bhale hi wo outer function execute hokar khatam ho chuka ho, use Closure kehte hain.
 
 // Example:
-
 function outer() {
   let count = 0;
   return function inner() {

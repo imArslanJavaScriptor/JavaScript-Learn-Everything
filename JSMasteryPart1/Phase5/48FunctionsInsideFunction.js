@@ -1,6 +1,8 @@
 // Functions Inside Function
+
 // hum 1 function ke andr multiple functions ko create and use kr skte hain.
 const app = () => {
+
   myFunc();
   function myFunc() {
     console.log("Hello From My Func");
@@ -12,6 +14,7 @@ const app = () => {
   };
 
   const mul = (n1, n2) => `The Multiplication of ${n1} x ${n2} is ${n1 * n2}`;
+  
   console.log("Inside App");
   console.log(addTwoNum(10, 20));
   console.log(mul(2, 10));
