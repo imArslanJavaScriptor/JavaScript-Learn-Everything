@@ -1,18 +1,61 @@
-// Short Syntax
+// =========================================
+// Short Syntax for Object Methods
+// =========================================
+
 const user1 = {
   userName: "Bilal Ahmad",
   age: 30,
-  // Yu Key value pair and then function keyword likhne ki bjay hum exampleFunc2 jaise bhi method likh skte ha.
+
+  // =========================================
+  // Normal Method Syntax
+  // =========================================
+
   userIntro: function (hobby, favMusician) {
     console.log(
-      `User Name: ${this.userName} and Age: ${this.age} Hobby: ${hobby}  Favourite Musician: ${favMusician}`,
+      `User Name: ${this.userName}, Age: ${this.age}, Hobby: ${hobby}, Favorite Musician: ${favMusician}`,
     );
   },
-  // Ye ha Short Syntax method ko likhne ka aur ye perfectly kam krega.   
-  exampleFunc2(){
-    console.log(this) // Represent user1 Object
-    console.log(this.userName, this.age)
-  }  
+
+  // =========================================
+  // Short Syntax Method
+  // =========================================
+
+  // function keyword likhne ki zarurat nahi hoti.
+  // Ye modern JavaScript ka cleaner syntax hai.
+
+  exampleFunc2() {
+    console.log(this);
+
+    // `this` => user1 object
+    console.log(this.userName, this.age);
+  },
 };
 
-user1.exampleFunc2() // Works Perfeclty fine like normal function works
+// Method Call
+user1.exampleFunc2();
+
+// Output:
+// { userName: "Bilal Ahmad", age: 30, ... }
+// Bilal Ahmad 30
+
+// =====================================================
+// Important Concept
+// =====================================================
+
+// Dono methods same tarah kaam karte hain:
+
+// 1. Normal Syntax
+// userIntro: function () {}
+
+// 2. Short Syntax
+// exampleFunc2() {}
+
+// Difference sirf syntax ka hai.
+// Behavior dono ka same hota hai.
+
+// =====================================================
+// Best Practice
+// =====================================================
+
+// Modern JavaScript me object methods ke liye
+// short syntax zyada readable aur clean mana jata hai.

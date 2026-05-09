@@ -1,34 +1,136 @@
-function createUser(userName, userAge, userEmail) {
-  const user = {};
-  ((user.userName = userName),
-    (user.userAge = userAge),
-    (user.userEmail = userEmail),
-    //❌ Problem: abhi issue ye ha ke ma jitni martaba new user create krrha hu memory ma utni hi martaba new object create horha or utni hi martba ye methods memory ma store hore ha but socho ke agr mere pas million of users ha to memory ma ye methods miliion times new bnega which is very costly operation agr dekho to ye function ki defination to same hi ha so i need solution for this.
-    // (user.about = function () {
-    //   return `${this.userName} is ${this.userAge} years`;
-    // }),
-    // (user.isEligibleForVote = function () {
-    //   return this.userAge >= 18;
-    // })
+// =========================================
+// Optimizing Memory with Shared Methods
+// =========================================
 
-    //✅ Solution: Ab Memory ke andr mera pass userMethods ka name se 1 object alg se stored ha ab me is object me mojood methods ke sirf refrence pass kr rha hu jis se memory ma hr bar new methods nhi bnega blke jb bhi ma ye methods call kru ga to wo is ke address ko point krega or method ko call krdega better approach.
-    (user.about = userMethods.about));
-  user.isEligibleForVote = userMethods.isEligibleForVote
+// =====================================================
+// Problem with Previous Approach
+// =====================================================
 
-  return user;
-}
+// Previous factory function me,
+// har new user object ke saath
+// methods bhi dobara create ho rahe the.
+
+// Example:
+// user.about = function () {}
+// user.isEligibleForVote = function () {}
+
+// Agar 1 million users create hon,
+// to ye methods bhi 1 million times
+// memory me store honge.
+
+// Problem:
+// - Extra memory usage
+// - Inefficient approach
+// - Performance impact
+
+// =====================================================
+// Better Solution
+// =====================================================
+
+// Methods ko alag object me store karenge
+// aur har user object ko sirf un methods ka
+// reference denge.
+
+// Isse:
+// ✅ Methods sirf ek baar memory me banenge
+// ✅ Sare users same methods share karenge
+// ✅ Memory efficient approach
+
+// =====================================================
+// Shared Methods Object
+// =====================================================
 
 const userMethods = {
   about() {
-    return `${this.userName} is ${this.userAge} years`;
+    return `${this.userName} is ${this.userAge} years old`;
   },
+
   isEligibleForVote() {
     return this.userAge >= 18;
   },
 };
 
-const user1 = createUser("HM Arslan", 20, "imArslan7061@gmail.com")
-const user2 = createUser("Javed Akhtar", 30, "imJaved1080@gmail.com")
-console.log(user1.about())
-console.log(user2.about())
-console.log(user1.isEligibleForVote())
+// =====================================================
+// Factory Function
+// =====================================================
+
+function createUser(userName, userAge, userEmail) {
+  const user = {};
+
+  // Properties
+  user.userName = userName;
+  user.userAge = userAge;
+  user.userEmail = userEmail;
+
+  // Shared Method References
+  user.about = userMethods.about;
+  user.isEligibleForVote =
+    userMethods.isEligibleForVote;
+
+  return user;
+}
+
+// =====================================================
+// Creating Users
+// =====================================================
+
+const user1 = createUser(
+  "HM Arslan",
+  20,
+  "imArslan7061@gmail.com"
+);
+
+const user2 = createUser(
+  "Javed Akhtar",
+  30,
+  "imJaved1080@gmail.com"
+);
+
+// =====================================================
+// Method Calls
+// =====================================================
+
+console.log(user1.about());
+console.log(user2.about());
+
+console.log(user1.isEligibleForVote());
+
+// Output:
+// HM Arslan is 20 years old
+// Javed Akhtar is 30 years old
+// true
+
+// =====================================================
+// Important Concept
+// =====================================================
+
+// Yahan:
+// user.about = userMethods.about
+
+// Iska matlab:
+// Method copy nahi ho raha,
+// sirf uska reference assign ho raha hai.
+
+// Sare objects same method ko use karte hain.
+
+// =====================================================
+// Advantage of This Approach
+// =====================================================
+
+// ✅ Better memory optimization
+// ✅ Shared methods
+// ✅ Faster and cleaner structure
+// ✅ Step closer to Prototypes in JavaScript
+
+// =====================================================
+// Still Not the Best Solution
+// =====================================================
+
+// Abhi bhi hume manually:
+// user.about = userMethods.about
+
+// assign karna pad raha hai.
+
+// JavaScript me is problem ko
+// automatically solve karne ke liye
+// Prototypes use kiye jate hain.
