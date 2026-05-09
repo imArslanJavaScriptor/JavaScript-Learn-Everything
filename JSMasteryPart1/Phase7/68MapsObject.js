@@ -1,9 +1,9 @@
 // Maps Object
 
-// map is an iterable
-// store data in ordered fashion
-// store key value pair (like Object)
-// duplicate keys are not allowed objects
+// 1- map is an iterable
+// 2- store data in ordered fashion
+// 3- store key value pair (like Object)
+// 4- duplicate keys are not allowed objects
 
 // Diffrence B/W maps & objects
 
@@ -38,11 +38,10 @@ person.set([1,2,3,4,5], "Numbers Array")
 // console.log(person.userName) // Undefined: Not Allowed
 // console.log(person["age"]) // Undefined: Not Allowed
 
-// Jab Dor or Bracket Notation Allow Nhi ha to Vlaues Kaise Access krain? 
+// Jab Dot or Bracket Notation Allow Nhi ha to Values Kaise Access krain?
 // Aesa
 // console.log(person.get(10))
 // console.log(person.get("userName"))
-
 // console.log(person.keys()) // Map Iterator: Gives You All the Keys
 
 // Loop through the keys of the person Map
@@ -58,7 +57,7 @@ person.set([1,2,3,4,5], "Numbers Array")
 
 
 // Yaha pr hum direct for of loop lga skta ha but Object ka case ma hum directly nhi lga skte
-// hn us ma hum for in loop loga skta ha yto get the keys of an Object
+// hn us ma hum for in loop loga skta ha to get the keys of an Object
 // Map value Array ke andr key value pair ki form ma rerender krta ha to is liye mane 
 // key or value ko array ma se destrcuture kr lya ha.
 // for(let [key, value] of person) {

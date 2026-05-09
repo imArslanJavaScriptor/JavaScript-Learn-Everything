@@ -1,13 +1,14 @@
-// some Method
+// some() Method
 const myArray = ["Hello", "Cat", "Dog", "Lion", "zebra", "Horse"];
 
 // Ok i want to check is it any element who is start with small letter ?
 let isCapitalized = myArray.some((item) => item[0].toLowerCase() === item[0]);
-// console.log(isCapitalized);
+console.log(isCapitalized);
 
-// some method myArray pr loop krega or check krega ke sare array ke elements ma sa kya koi 1 bhi condion ko satisfy krte ha
-// if yes to true return krega or agr array ma sa koi 1 bhi element condition ko satisfy nhi krta hua to false return krega.
-// IMP: some method boolean return krega.
+// some() method myArray pr loop krega or check krega ke sare array ke elements ma sa
+// kya koi 1 bhi condion ko satisfy krte ha if yes to true return krega or agr array ma
+// sa koi 1 bhi element condition ko satisfy nhi krta hua to false return krega.
+// IMP: some() method boolean return krega.
 
 // Real World Scenario
 let products = [
@@ -18,7 +19,7 @@ let products = [
   { productId: 640, productName: "Keyboard", price: 5000 },
 ];
 
-// Check if there is ant product who's price is greater then 60K
+// Check if there is an product who's price is greater then 60K
 let checkProductsPrice = products.some((product) => product.price >= 60000);
 
 if (checkProductsPrice) {

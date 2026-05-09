@@ -5,14 +5,23 @@ const myArray = ["Hello", "Cat", "Dog", "Lion", "zebra", "Horse"];
 let isCapitalized = myArray.every((item) => item[0].toUpperCase() === item[0]);
 console.log(isCapitalized);
 
-// every method myArray pr loop krega or check krega ke sare array ke elements condion ko sa satisfy krte hoon
-// if all the elements satisfy the condition so true return krega wrna false return krega
-// every method boolean return krega.
+// Boolean ki base pr Check kr skta ho kuch bhi according to requirments.
+if (isCapitalized) {
+  console.log("All The List Item Start with Capital Alphabets");
+} else {
+  console.log("All The List Items Not Start with Capital Alphabets");
+}
+
+// every method myArray pr loop krega or check krega ke sare array ke elements
+// condion ko satisfy krte hoon if all the elements satisfy the condition so true return
+// krega wrna false return krega every() method boolean return lrta ha.
+
 // How it works?
-// mane myArray pr every method apply kia ab ye method check krega trhough the each array elements ke us eleemnt ki
-// first index ka letter capital ha small so ye loop end tk sirf tb hi chale ga jb all the array elemnts are satisfied with the condition
+// every() method each array elements pr check krega ke us eleemnt ki
+// first index ka letter capital ha ya small so ye loop end tk sirf tb hi
+// chale ga jb all the array elemnts are satisfied with the condition
 // agr khi pr bhi condition false hui to ye wahi se return kr jai ga phir last tk nhi chalega.
-// so myArray ke case ma output ayega fasle or zebra kt check krne ke baad age proceed nhi krega or return kr jai ga.
+// so myArray ke case ma output ayega fasle or zebra tk check krne ke baad age proceed nhi krega or return kr jai ga.
 
 // Real World Scenario
 let products = [
@@ -24,10 +33,12 @@ let products = [
 ];
 
 // Check if the price of every product in the array is less then 1 Lakh
-let checkProductsPriceRange = products.every(product => product.price < 100000);
+let checkProductsPriceRange = products.every(
+  (product) => product.price < 100000,
+);
 
 if (checkProductsPriceRange) {
-  console.log(`Yes Products Price Range is Below 1 Lakh`)
+  console.log(`Yes Available Products Price Range is Below 1 Lakh`);
 } else {
-  console.log(`Sorry Products Price Range is Abobe 1 Lakh`)
+  console.log(`Sorry Products Price Range is Abobe 1 Lakh`);
 }
