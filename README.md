@@ -1,57 +1,63 @@
-# 🚀 JavaScript Mastery: Zero to Pro (Roman Urdu Guide)
+# 🚀 JavaScript Mastery: Zero to Pro
 
-Is repository mein  JavaScript ka mukammal nichod shamil hai. Yeh codebases aur notes un tamam logon ke liye hain jo JavaScript ko buniadi concepts se lekar advanced architecture tak seekhna chahte hain.
+A complete JavaScript learning repository designed to take you from fundamental concepts to advanced architecture and real-world development practices.
 
 ## 📑 Table of Contents
-* [Repo Overview](#repo-overview)
-* [Module 1: Basics aur OOP](#module-1-basics-aur-oop)
-* [Module 2: JS Internals aur DOM](#module-2-js-internals-aur-dom)
-* [Module 3: Asynchronous JS aur APIs](#module-3-asynchronous-js-aur-apis)
+
+* [Repository Overview](#repository-overview)
+* [Module 1: Fundamentals & OOP](#module-1-fundamentals--oop)
+* [Module 2: JavaScript Internals & DOM](#module-2-javascript-internals--dom)
+* [Module 3: Asynchronous JavaScript & APIs](#module-3-asynchronous-javascript--apis)
 * [Technical Skills](#technical-skills)
 
 ---
 
-## 🌟 Repo Overview
-Is Repo mein takreeban **150+ files** ke zariye JavaScript ke har ek feature ko detail mein samjhaya gaya hai. Chahe woh basic math operations hon ya complex asynchronous calls, har cheez practical examples ke saath mojood hai.
+## 🌟 Repository Overview
+
+This repository contains **150+ practical files** that explain JavaScript concepts in depth. From basic operations to advanced asynchronous programming, every topic is covered with hands-on examples and detailed implementations.
 
 ---
 
-## 🛠 Module 1: Basics aur OOP
-Pehle hissay mein JavaScript ke foundation aur **Object-Oriented Programming** par focus kiya gaya hai.
+## 🛠 Module 1: Fundamentals & OOP
 
-*   **Fundamentals:** Variables (`var`, `let`, `const`), Data Types, aur Loops.
-*   **Data Structures:** Arrays aur Objects ki deep understanding, aur modern features jaise **Spread Operator** aur **Destructuring**.
-*   **Functions:** Function declarations, Expressions, aur modern **Arrow Functions**.
-*   **OOP & Prototypes:** `This` keyword, Call/Apply/Bind methods, Prototype inheritance, aur **Classes** ka istemal.
+This section focuses on JavaScript foundations and **Object-Oriented Programming (OOP)** concepts.
 
----
-
-## ⚙️ Module 2: JS Internals aur DOM
-Is module mein humne dekha ke JavaScript engine parde ke peeche kaise kaam karta hai aur web pages ko kaise manipulate kiya jata hai.
-
-*   **JavaScript Internals:** Global aur Function **Execution Context**, Hoisting, aur Scope Chain.
-*   **Closures:** Functions ka apni lexical memory ko yaad rakhne ka concept.
-*   **DOM (Document Object Model):** Elements ko select karna, styles change karna, aur innerHTML ka sahi istemal.
-*   **Events:** User interactions ko handle karna, **Event Bubbling**, Capturing, aur Delegation.
+* **Fundamentals:** Variables (`var`, `let`, `const`), data types, conditions, and loops.
+* **Data Structures:** Deep understanding of arrays and objects, including modern features like **Spread Operator** and **Destructuring**.
+* **Functions:** Function declarations, expressions, and modern **Arrow Functions**.
+* **OOP & Prototypes:** `this` keyword, Call/Apply/Bind methods, prototype inheritance, and ES6 **Classes**.
 
 ---
 
-## 🌐 Module 3: Asynchronous JS aur APIs
-Final part mein heavy tasks aur server communication ko handle karne ke modern tarike sikhaye gaye hain.
+## ⚙️ Module 2: JavaScript Internals & DOM
 
-*   **Asynchronous JavaScript:** `setTimeout`, `setInterval`, aur Event Loop ki working.
-*   **Promises:** Callback Hell se bachne ke liye `Promises` aur unki chaining ka concept.
-*   **Modern Async:** `Async/Await` aur `Fetch API` ke zariye APIs se data mangwana.
-*   **Modules:** Code ko organize karne ke liye ES6 Modules (`import/export`) ka istemal.
+This module explains how JavaScript works behind the scenes and how web pages are manipulated dynamically.
+
+* **JavaScript Internals:** Global and Function **Execution Context**, hoisting, and scope chain.
+* **Closures:** Understanding lexical scope and memory retention in functions.
+* **DOM (Document Object Model):** Selecting elements, updating styles, and working with `innerHTML`.
+* **Events:** Handling user interactions, **Event Bubbling**, Capturing, and Delegation.
+
+---
+
+## 🌐 Module 3: Asynchronous JavaScript & APIs
+
+The final section covers modern techniques for handling asynchronous tasks and server communication.
+
+* **Asynchronous JavaScript:** `setTimeout`, `setInterval`, and the Event Loop.
+* **Promises:** Avoiding callback hell using **Promises** and chaining.
+* **Modern Async Patterns:** Using `Async/Await` and the `Fetch API` for API integration.
+* **Modules:** Organizing code with ES6 Modules (`import/export`).
 
 ---
 
 ## 🎯 Technical Skills Learned
-*   Modern JavaScript (ES6+ Features).
-*   Web API Integration.
-*   Performance Optimization (using `defer` & `async`).
-*   Clean aur Scalable Code Architecture.
+
+* Modern JavaScript (ES6+ Features)
+* Web API Integration
+* Performance Optimization (`defer` & `async`)
+* Clean & Scalable Code Architecture
 
 ---
 
-**Note:** Is repository ka har folder ek specific topic ko represent karta hai, jis mein implementation ke saath detailed comments mojood hain.
+> **Note:** Each folder in this repository represents a dedicated topic and includes well-commented implementations for practical understanding.
